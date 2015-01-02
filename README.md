@@ -1,36 +1,50 @@
 RoundedLetterView
 =================
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RoundedLetterView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1135)
+
 RoundedLetterView like the one in Android 5.0 Contacts app
 
 ![RoundedLetterView](/Screenshots/device-2014-11-13-191000.png)
 
 Attributes to choose from:
 
-* `titleText` - The text in the first row.
-* `titleSize` - The size of the first row text.
-* `titleColor` - The color of the first row text.
-* `backgroundColorValue` - the color between the circle and the stroke.
+* `rlv_titleText` - The text in the first row.
+* `rlv_titleSize` - The size of the first row text.
+* `rlv_titleColor` - The color of the first row text.
+* `rlv_backgroundColorValue` - the color between the circle and the stroke.
     
 Example
 =======
 ```xml
- <gr.vanderbox.roundedletterview.RoundedLetterView
+ <com.github.pavlospt.roundedletterview.RoundedLetterView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/rlv_name_view"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="15dp"
-        app:backgroundColorValue="@color/green"
-        app:titleColor="@android:color/white"
-        app:titleSize="35dp"
-        app:titleText="A" />
+        app:backgroundColorValue="@color/green" (rlv_backgroundColor in v1.1)
+        app:titleColor="@android:color/white" (rlv_titleColor in v1.1)
+        app:titleSize="35dp" (rlv_titleSize in v1.1)
+        app:titleText="A" /> (rlv_titleText in v1.1)
 ```
+
+What's new
+==========
+
+v1.0: Initial Commit
+
+v1.1: Ability to set custom Font on the Text using a Typeface object. **setTypeface(font: Typeface)**
+
+Migrating from 1.0 to 1.1
+=========================
+
+If you are using version **1.1** you have to add the prefix `rlv_` before each attribute. 
 
 How To Use
 ==========
 
-``compile 'com.github.pavlospt:roundedletterview:1.0'``
+``compile 'com.github.pavlospt:roundedletterview:1.1'``
 
 Credits
 =======
