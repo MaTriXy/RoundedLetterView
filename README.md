@@ -3,6 +3,8 @@ RoundedLetterView
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RoundedLetterView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1135)
 
+[ ![Download](https://api.bintray.com/packages/pavlospt/android-libraries/RoundedLetterView/images/download.svg) ](https://bintray.com/pavlospt/android-libraries/RoundedLetterView/_latestVersion)
+
 RoundedLetterView like the one in Android 5.0 Contacts app
 
 ![RoundedLetterView](/Screenshots/device-2014-11-13-191000.png)
@@ -23,7 +25,7 @@ Example
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="15dp"
-        app:backgroundColorValue="@color/green" (rlv_backgroundColor in v1.1)
+        app:backgroundColorValue="@color/green" (rlv_backgroundColorValue in v1.1)
         app:titleColor="@android:color/white" (rlv_titleColor in v1.1)
         app:titleSize="35dp" (rlv_titleSize in v1.1)
         app:titleText="A" /> (rlv_titleText in v1.1)
@@ -44,7 +46,7 @@ If you are using version **1.1** you have to add the prefix `rlv_` before each a
 How To Use
 ==========
 
-``compile 'com.github.pavlospt:roundedletterview:1.1'``
+``compile 'com.github.pavlospt:roundedletterview:1.3'``
 
 Credits
 =======
